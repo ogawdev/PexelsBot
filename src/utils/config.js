@@ -6,6 +6,7 @@ const config = {
   SESSION_TYPE: process.env.SESSION_TYPE,
   DOMAIN: process.env.DOMAIN,
   PORT: process.env.PORT,
+  API_KEY: process.env.API_KEY,
 };
 
 module.exports = config;

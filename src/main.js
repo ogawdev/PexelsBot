@@ -5,6 +5,10 @@ const session = require("./core/session");
 const stage = require("./scenes");
 const startBot = require("./utils/startBot");
 
+bot.catch((err, ctx) => {
+  console.log(`Ooops, encountered an error for ${ctx.updateType}`, err);
+});
+
 bot.use(session);
 bot.use(stage.middleware());
 
