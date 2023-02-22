@@ -3,9 +3,7 @@ const { Scenes } = require("telegraf");
 const scene = new Scenes.BaseScene("start");
 
 scene.enter((ctx) => {
-  ctx.reply(
-    "Assalomu alaykum bu sayt orqali ajoyib rasmlar yuklashingiz mumkin"
-  );
+  ctx.reply("Hello, you can upload great pictures through this bot");
   ctx.scene.enter("menu");
 });
 
