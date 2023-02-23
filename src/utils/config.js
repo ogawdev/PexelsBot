@@ -1,3 +1,5 @@
+require("dotenv").config();
+
 const config = {
   NODE_ENV: process.env.NODE_ENV || "development",
   BOT_TOKEN: process.env.BOT_TOKEN,
@@ -7,6 +9,7 @@ const config = {
   DOMAIN: process.env.DOMAIN,
   PORT: process.env.PORT,
   API_KEY: process.env.API_KEY,
+  MONGO_URL: process.env.MONGO_URL,
 };
 
 module.exports = config;
